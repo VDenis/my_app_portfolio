@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/projects_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="24sp"
+        android:text="@string/projects_title"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/projects_title_textview">
+
+            <Space
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <ScrollView
+                android:layout_width="0px"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:showDividers="middle"
+                    android:divider="@drawable/empty_tall_divider"
+                    >
+
+                    <Button
+                        android:id="@+id/project_0_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_0"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_1_2_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_1_2"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_3_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_3"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_4_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_4"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_5_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_5"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_6_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_6"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                    <Button
+                        android:id="@+id/project_7_8_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_7_8_capstone"
+                        android:background="@color/color_udacity_button"
+                        android:onClick="sendMessage"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Space
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
